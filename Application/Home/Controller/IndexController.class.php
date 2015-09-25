@@ -13,7 +13,7 @@ class IndexController extends Controller {
     $echostr	=$_GET['echostr'];
     $signature  =$_GET['signature'];
     $array		=array();
-    $array		=array($nonce,$timestamp,$token);
+    $array		=array($token,$timestamp,$nonce);
     sort($array);
     $str     	=sha1(implode($array));
     if ($str   ==$signature) {
