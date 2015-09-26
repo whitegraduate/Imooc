@@ -1,6 +1,7 @@
 <?php 
 // ignor this
-
+//test5
+////test6
 define("TOKEN", "weixin");
 $wechatObj = new wechatCallbackapiTest();
 if (isset($_GET['echostr'])) {
